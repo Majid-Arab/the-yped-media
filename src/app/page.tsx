@@ -1,4 +1,5 @@
 import { ColorSchemesSwitcher } from "@/components/color-schemes-switcher";
+import { HeaderMegaMenu } from "@/components/header/HeaderMegaMenu";
 import {
   AppShell,
   AppShellHeader,
@@ -13,15 +14,7 @@ export default function Home() {
   return (
     <AppShell header={{ height: 60 }} padding="md">
       <AppShellHeader>
-        <Group className="h-full px-md">
-          <Image
-            className="dark:invert"
-            src="https://nextjs.org/icons/next.svg"
-            alt="logo"
-            width={100}
-            height={100}
-          />
-        </Group>
+        <HeaderMegaMenu />
       </AppShellHeader>
       <AppShellMain>
         <Title className="text-center mt-20">
