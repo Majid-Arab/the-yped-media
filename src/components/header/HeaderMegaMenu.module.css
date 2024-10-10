@@ -2,7 +2,15 @@
     height: rem(60px);
     padding-left: var(--mantine-spacing-md);
     padding-right: var(--mantine-spacing-md);
-    border-bottom: rem(1px) solid light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
+    width: 100%;
+    position: fixed;
+
+    /* Ensure the background is transparent */
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: none;
+    /* Remove any blur effect if applied */
+    z-index: 100;
+    /* Ensure it's above other content */
 }
 
 .link {
@@ -21,9 +29,9 @@
         width: 100%;
     }
 
-    @mixin hover {
+    /* @mixin hover {
         background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-6));
-    }
+    } */
 }
 
 .subLink {
@@ -31,13 +39,13 @@
     padding: var(--mantine-spacing-xs) var(--mantine-spacing-md);
     border-radius: var(--mantine-radius-md);
 
-    @mixin hover {
+    /* @mixin hover {
         background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-7));
-    }
+    } */
 }
 
 .dropdownFooter {
-    background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-7));
+    /* background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-7)); */
     margin: calc(var(--mantine-spacing-md) * -1);
     margin-top: var(--mantine-spacing-sm);
     padding: var(--mantine-spacing-md) calc(var(--mantine-spacing-md) * 2);

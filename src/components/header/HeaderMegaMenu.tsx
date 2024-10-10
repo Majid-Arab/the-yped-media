@@ -88,7 +88,7 @@ export function HeaderMegaMenu() {
 
     return (
         <Box pb={120}>
-            <header className={classes.header}>
+            <header className={`${classes.header} bg-transparent`}>
                 <Group justify="space-between" h="100%">
                     <a href="#" className={classes.link}>
                         Logo
