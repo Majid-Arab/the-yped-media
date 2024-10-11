@@ -15,11 +15,11 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <AppShell header={{ height: 60 }} >
-      <AppShellHeader>
+    <AppShell header={{ height: 60 }}>
+      <AppShellHeader styles={{ header: { background: "none" } }}>
         <HeaderMegaMenu />
       </AppShellHeader>
-      <AppShellMain>
+      <AppShellMain styles={{ main: { padding: 0 } }}>
         <HeroSection />
         <SpecializationSection />
         <ServiceSection />
