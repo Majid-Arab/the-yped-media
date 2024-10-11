@@ -16,7 +16,9 @@ import Image from "next/image";
 export default function Home() {
   return (
     <AppShell header={{ height: 60 }}>
-      <AppShellHeader styles={{ header: { background: "none" } }}>
+      <AppShellHeader
+        styles={{ header: { background: "none", borderBottom: "none" } }}
+      >
         <HeaderMegaMenu />
       </AppShellHeader>
       <AppShellMain styles={{ main: { padding: 0 } }}>
