@@ -23,15 +23,15 @@ import {
 import classes from './ServiceSection.module.css';
 
 const mockdata = [
-    { title: 'Credit cards', icon: IconCreditCard, color: 'violet' },
-    { title: 'Banks nearby', icon: IconBuildingBank, color: 'indigo' },
-    { title: 'Transfers', icon: IconRepeat, color: 'blue' },
-    { title: 'Refunds', icon: IconReceiptRefund, color: 'green' },
-    { title: 'Receipts', icon: IconReceipt, color: 'teal' },
-    { title: 'Taxes', icon: IconReceiptTax, color: 'cyan' },
-    { title: 'Reports', icon: IconReport, color: 'pink' },
-    { title: 'Payments', icon: IconCoin, color: 'red' },
-    { title: 'Cashback', icon: IconCashBanknote, color: 'orange' },
+    { title: 'Portfolio Website', icon: IconCreditCard, color: 'violet' },
+    { title: '3D Website', icon: IconBuildingBank, color: 'indigo' },
+    { title: 'UI / UX', icon: IconRepeat, color: 'blue' },
+    { title: 'Interactive Website', icon: IconReceiptRefund, color: 'green' },
+    { title: 'landing pages', icon: IconReceipt, color: 'teal' },
+    { title: 'Agency Website', icon: IconReceiptTax, color: 'cyan' },
+    { title: 'Product Website', icon: IconReport, color: 'pink' },
+    { title: 'Ecommerce', icon: IconCoin, color: 'red' },
+    // { title: 'Cashback', icon: IconCashBanknote, color: 'orange' },
 ];
 
 export function ServiceSection() {
@@ -39,8 +39,8 @@ export function ServiceSection() {
 
     const items = mockdata.map((item) => (
         <UnstyledButton key={item.title} className={classes.item}>
-            <item.icon color={theme.colors[item.color][6]} size="2rem" />
-            <Text size="xs" mt={7}>
+            <item.icon color={theme.colors[item.color][6]} size="6rem" />
+            <Text size="xs" mt={7} className={classes.text}>
                 {item.title}
             </Text>
         </UnstyledButton>
@@ -48,13 +48,10 @@ export function ServiceSection() {
 
     return (
         <Card withBorder radius="md" className={classes.card}>
-            <Group justify="space-between">
-                <Text className={classes.title}>Services</Text>
-                <Anchor size="xs" c="dimmed" style={{ lineHeight: 1 }}>
-                    + 21 other services
-                </Anchor>
+            <Group mb={50}>
+                <Text className={classes.title}>Project Types we Specialize in</Text>
             </Group>
-            <SimpleGrid cols={3} mt="md">
+            <SimpleGrid cols={3} mt="md" spacing="xl" verticalSpacing="xl">
                 {items}
             </SimpleGrid>
         </Card>

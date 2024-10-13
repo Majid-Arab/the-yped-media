@@ -1,5 +1,9 @@
 .card {
-    background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-6));
+    background-color: black;
+    border-radius: 40px;
+    margin: 80px;
+    padding: 50px 100px;
+    /* background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-6)); */
 }
 
 .title {
@@ -7,17 +11,26 @@
         Greycliff CF,
         var(--mantine-font-family);
     font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    text-transform: uppercase;
 }
 
 .item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     text-align: center;
-    border-radius: var(--mantine-radius-md);
-    height: rem(90px);
-    background-color: light-dark(var(--mantine-color-white), var(--mantine-color-dark-7));
+    border-radius: var(--mantine-radius-lg);
+    height: rem(150px);
+    /* width: 80%; */
+    background-color: black;
+    border: 1px solid #fff;
+    padding: 20px;
+    /* background-color: light-dark(var(--mantine-color-white), var(--mantine-color-dark-7)); */
     transition:
         box-shadow 150ms ease,
         transform 100ms ease;
@@ -26,4 +39,9 @@
         box-shadow: var(--mantine-shadow-md);
         transform: scale(1.05);
     }
+}
+
+.text {
+    color: #fff;
+    font-size: 20px;
 }
