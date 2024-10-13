@@ -1,4 +1,4 @@
-import { Container, Title, Text, Button, Box, Group } from '@mantine/core';
+import { Container, Title, Text, Box } from '@mantine/core';
 import classes from './SpecializationSection.module.css';
 
 export function SpecializationSection() {
@@ -18,7 +18,7 @@ export function SpecializationSection() {
                                 SPECIALIZE
                             </Text>{' '}
                             IN CREATING
-                            ENGAGIN DIGITAL EXPERIENCES
+                            ENGAGING DIGITAL EXPERIENCES
                             THAT WILL {' '}
                             <Text
                                 component="span"

@@ -5,7 +5,6 @@ import {
     Text,
     SimpleGrid,
     UnstyledButton,
-    Anchor,
     Group,
     useMantineTheme,
 } from '@mantine/core';
@@ -17,7 +16,6 @@ import {
     IconReceipt,
     IconReceiptTax,
     IconReport,
-    IconCashBanknote,
     IconCoin,
 } from '@tabler/icons-react';
 import classes from './ServiceSection.module.css';

@@ -1,24 +1,9 @@
 import {
-  HoverCard,
   Group,
   Button,
-  UnstyledButton,
-  Text,
-  SimpleGrid,
-  ThemeIcon,
-  Anchor,
-  Divider,
-  Center,
   Box,
-  Burger,
-  Drawer,
-  Collapse,
-  ScrollArea,
-  rem,
-  useMantineTheme,
 } from "@mantine/core";
 // import { MantineLogo } from '@mantinex/mantine-logo';
-import { useDisclosure } from "@mantine/hooks";
 import {
   IconNotification,
   IconCode,
@@ -26,7 +11,6 @@ import {
   IconChartPie3,
   IconFingerprint,
   IconCoin,
-  IconChevronDown,
 } from "@tabler/icons-react";
 import classes from "./HeaderMegaMenu.module.css";
 

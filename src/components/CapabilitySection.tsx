@@ -1,4 +1,4 @@
-import { Container, Title, Text, UnstyledButton } from '@mantine/core';
+import { Container, Title, Text } from '@mantine/core';
 import classes from './CapabilitySection.module.css';
 import VerticalText from './VerticalText';
 
