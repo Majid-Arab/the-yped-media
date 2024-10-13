@@ -1,6 +1,5 @@
 import { AdvantagesSection } from "@/components/AdvantagesSection";
 import { CapabilitySection } from "@/components/CapabilitySection";
-import { ColorSchemesSwitcher } from "@/components/color-schemes-switcher";
 import { HeaderMegaMenu } from "@/components/header/HeaderMegaMenu";
 import { HeroSection } from "@/components/HeroSection";
 import { ServiceSection } from "@/components/ServiceSection";
@@ -9,11 +8,7 @@ import {
   AppShell,
   AppShellHeader,
   AppShellMain,
-  Group,
-  Text,
-  Title,
 } from "@mantine/core";
-import Image from "next/image";
 
 export default function Home() {
   return (
