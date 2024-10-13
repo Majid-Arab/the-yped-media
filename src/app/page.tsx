@@ -1,3 +1,4 @@
+import { CapabilitySection } from "@/components/CapabilitySection";
 import { ColorSchemesSwitcher } from "@/components/color-schemes-switcher";
 import { HeaderMegaMenu } from "@/components/header/HeaderMegaMenu";
 import { HeroSection } from "@/components/HeroSection";
@@ -25,6 +26,7 @@ export default function Home() {
         <HeroSection />
         <SpecializationSection />
         <ServiceSection />
+        <CapabilitySection />
       </AppShellMain>
     </AppShell>
   );
