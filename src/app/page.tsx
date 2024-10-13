@@ -1,3 +1,4 @@
+import { AdvantagesSection } from "@/components/AdvantagesSection";
 import { CapabilitySection } from "@/components/CapabilitySection";
 import { ColorSchemesSwitcher } from "@/components/color-schemes-switcher";
 import { HeaderMegaMenu } from "@/components/header/HeaderMegaMenu";
@@ -27,6 +28,7 @@ export default function Home() {
         <SpecializationSection />
         <ServiceSection />
         <CapabilitySection />
+        <AdvantagesSection />
       </AppShellMain>
     </AppShell>
   );
