@@ -1,25 +1,6 @@
-import { Container, Title, Text } from '@mantine/core';
+import { Container, Title, Text, Button, Box, Group } from '@mantine/core';
 import classes from './CapabilitySection.module.css';
 import VerticalText from './VerticalText';
-
-const mockdata = [
-    {
-        title: 'Web Design',
-        services: [
-            { id: 1, service: "Web Design" },
-            { id: 2, service: "Mobile Design" },
-            { id: 3, service: "UI/UX" }
-        ]
-    },
-    {
-        title: 'Web Development',
-        services: [
-            { id: 1, service: "Web Animation" },
-            { id: 2, service: "Web Development" }
-        ]
-    },
-    // Add more sections as needed
-];
 
 export function CapabilitySection() {
     return (
@@ -27,7 +8,7 @@ export function CapabilitySection() {
             <Container size="full">
                 <div className={classes.inner}>
                     <div className={classes.content}>
-                        <Title className={classes.title}>
+                        <Title className={classes.title} >
                             AT OUR STUDIO CREATIVITY TAKES CENTER STAGE
                             DELIVERING SOLUTIONS THAT EXCEEDS EXPECTATION
                         </Title>
@@ -37,32 +18,36 @@ export function CapabilitySection() {
                             Our Capabilities
                         </Text>
                         <Text className={classes.subText}>
-                            You have the option to order a full website creation
-                            or individual service as needed
+                            you have the option to order a full website
+                            creation or individual service as needed
                         </Text>
                     </div>
 
                     <hr style={{ border: "1px solid #fff", marginTop: "5px" }} />
 
-                    {mockdata.map((item, index) => (
-                        <div key={index} className={classes.listBox}>
-                            {/* Render VerticalText for each section */}
-                            <VerticalText title={item.title} />
+                    <div className={classes.listBox}>
+                        <VerticalText title='Web Design' />
 
-                            {/* Render list of services dynamically */}
-                            <div className={classes.list}>
-                                {item.services.map((service) => (
-                                    <h2 key={service.id} className={classes.item}>
-                                        <span>{`0${service.id}`}</span> {service.service}
-                                    </h2>
-                                ))}
-                            </div>
+                        <div className={classes.list}>
+                            <h2 className={classes.item}><span>01</span> Web Design</h2>
+                            <h2 className={classes.item}><span>02</span> Mobile Design</h2>
+                            <h2 className={classes.item}><span>03</span> UI/UX</h2>
                         </div>
-                    ))}
+                    </div>
+
+                    <hr style={{ border: "1px solid #fff", marginTop: "5px" }} />
+                    <div className={classes.listBox}>
+                        <VerticalText title='Web Development' />
+
+                        <div className={classes.list}>
+                            <h2 className={classes.item}><span>01</span> Web Animation</h2>
+                            <h2 className={classes.item}><span>02</span> Web Development</h2>
+                        </div>
+                    </div>
 
                     <hr style={{ border: "1px solid #fff", marginTop: "5px" }} />
                 </div>
-            </Container>
-        </div>
+            </Container >
+        </div >
     );
 }
