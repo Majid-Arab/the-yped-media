@@ -1,5 +1,6 @@
-import { AdvantagesSection } from "@/components/AdvantagesSection";
+// import { AdvantagesSection } from "@/components/AdvantagesSection";
 import { CapabilitySection } from "@/components/CapabilitySection";
+import { GetInTouch } from "@/components/contact/GetInTouch";
 import { HeaderMegaMenu } from "@/components/header/HeaderMegaMenu";
 import { HeroSection } from "@/components/HeroSection";
 import { ServiceSection } from "@/components/ServiceSection";
@@ -23,7 +24,8 @@ export default function Home() {
         <SpecializationSection />
         <ServiceSection />
         <CapabilitySection />
-        <AdvantagesSection />
+        {/* <AdvantagesSection /> */}
+        <GetInTouch />
       </AppShellMain>
     </AppShell>
   );
