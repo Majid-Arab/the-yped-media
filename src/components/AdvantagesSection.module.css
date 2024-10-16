@@ -1,44 +1,28 @@
-.card {
-    background-color: black;
-    border-radius: 40px;
-    margin: 80px;
-    padding: 50px 100px;
+.feature {
+    position: relative;
+    padding-top: var(--mantine-spacing-xl);
+    padding-left: var(--mantine-spacing-xl);
+}
+
+.overlay {
+    position: absolute;
+    height: rem(100px);
+    width: rem(160px);
+    top: 0;
+    left: 0;
+    background-color: var(--mantine-color-blue-light);
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+}
+
+.icon {
+    color: var(--mantine-color-blue-filled);
 }
 
 .title {
-    font-family:
-        Greycliff CF,
-        var(--mantine-font-family);
-    font-weight: 700;
-    font-size: 50px;
-    text-align: center;
-    width: 100%;
-    color: #fff;
-    text-transform: uppercase;
-}
-
-.item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    text-align: center;
-    border-radius: var(--mantine-radius-lg);
-    height: rem(150px);
-    background-color: black;
-    border: 1px solid #fff;
-    padding: 20px;
-    transition:
-        box-shadow 150ms ease,
-        transform 100ms ease;
-
-    mixin hover {
-        box-shadow: var(--mantine-shadow-md);
-        transform: scale(1.05);
-    }
-}
-
-.text {
-    color: #fff;
-    font-size: 20px;
+    color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
 }
