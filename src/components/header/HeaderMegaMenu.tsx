@@ -1,12 +1,21 @@
+
+"use client"
 import {
   Group,
   Button,
   Box,
 } from "@mantine/core";
-// import { MantineLogo } from '@mantinex/mantine-logo';
 import classes from "./HeaderMegaMenu.module.css";
 
 export function HeaderMegaMenu() {
+
+  // Function to handle scroll
+  const handleScrollToContact = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <Box pb={120}>
@@ -17,7 +26,7 @@ export function HeaderMegaMenu() {
           </a>
 
           <Group visibleFrom="sm">
-            <Button variant="default">Contact</Button>
+            <Button variant="default" onClick={handleScrollToContact}>Contact</Button>
           </Group>
 
         </Group>
