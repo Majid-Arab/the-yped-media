@@ -40,16 +40,6 @@ export function SpecializationSection() {
                                 brand part.
                             </Text>
                         </Box>
-
-                        {/* <Button
-                            variant="gradient"
-                            gradient={{ from: 'pink', to: 'yellow' }}
-                            size="xl"
-                            className={classes.control}
-                            mt={40}
-                        >
-                            Get started
-                        </Button> */}
                     </div>
                 </div>
             </Container>

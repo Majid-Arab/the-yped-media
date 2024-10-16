@@ -4,14 +4,9 @@
   padding-right: var(--mantine-spacing-md);
   width: 100%;
   position: fixed;
-
-  /* Ensure the background is transparent */
   background-color: rgba(255, 255, 255, 0);
   backdrop-filter: none;
-  /* color: white; */
-  /* Remove any blur effect if applied */
   z-index: 100;
-  /* Ensure it's above other content */
 }
 
 .link {
@@ -51,6 +46,5 @@
   margin-top: var(--mantine-spacing-sm);
   padding: var(--mantine-spacing-md) calc(var(--mantine-spacing-md) * 2);
   padding-bottom: var(--mantine-spacing-xl);
-  border-top: rem(1px) solid
-    light-dark(var(--mantine-color-gray-1), var(--mantine-color-dark-5));
+  border-top: rem(1px) solid light-dark(var(--mantine-color-gray-1), var(--mantine-color-dark-5));
 }
