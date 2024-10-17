@@ -18,7 +18,7 @@
   text-decoration: none;
   color: white;
   font-weight: 500;
-  font-size: var(--mantine-font-size-sm);
+  font-size: 30px;
 
   @media (max-width: mantine-breakpoint-sm) {
     height: rem(42px);

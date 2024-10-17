@@ -25,7 +25,7 @@ const mockdata = [
     { title: '3D Website', icon: IconBuildingBank, color: 'indigo' },
     { title: 'UI / UX', icon: IconRepeat, color: 'blue' },
     { title: 'Interactive Website', icon: IconReceiptRefund, color: 'green' },
-    { title: 'landing pages', icon: IconReceipt, color: 'teal' },
+    { title: 'Landing pages', icon: IconReceipt, color: 'teal' },
     { title: 'Agency Website', icon: IconReceiptTax, color: 'cyan' },
     { title: 'Product Website', icon: IconReport, color: 'pink' },
     { title: 'Ecommerce', icon: IconCoin, color: 'red' },

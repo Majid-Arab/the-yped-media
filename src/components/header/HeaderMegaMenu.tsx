@@ -22,7 +22,8 @@ export function HeaderMegaMenu() {
       <header className={classes.header}>
         <Group justify="space-between" h="100%">
           <a href="#" className={classes.link}>
-            Logo
+            The Typed Media
+            {/* The <span style={{ fontFamily: "monospace", }}>Typed Media</span> */}
           </a>
 
           <Group visibleFrom="sm">
