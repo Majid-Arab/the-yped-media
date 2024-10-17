@@ -1,6 +1,14 @@
+.contactBox {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .wrapper {
     margin: 100px;
     min-height: rem(400px);
+    width: 1200px;
     /* background-image: linear-gradient(-60deg,
             var(--mantine-color-blue-4) 0%,
             var(--mantine-color-blue-7) 100%); */
@@ -46,7 +54,7 @@
 }
 
 .input {
-    background-color: var(--mantine-color-white);
+    background-color: #0;
     /* border-color: var(--mantine-color-gray-4); */
     color: var(--mantine-color-black);
 
