@@ -1,73 +1,93 @@
 .contactBox {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
 }
 
 .wrapper {
-    margin: 100px;
-    min-height: rem(400px);
-    width: 1200px;
-    /* background-image: linear-gradient(-60deg,
-            var(--mantine-color-blue-4) 0%,
-            var(--mantine-color-blue-7) 100%); */
-    border-radius: var(--mantine-radius-md);
-    border: 2px solid #fff;
-    padding: calc(var(--mantine-spacing-xl) * 2.5);
-
-    @media (max-width: $mantine-breakpoint-sm) {
-        padding: calc(var(--mantine-spacing-xl) * 1.5);
-    }
-}
-
-.title {
-    font-family:
-        Greycliff CF,
-        var(--mantine-font-family);
-    color: var(--mantine-color-white);
-    line-height: 1;
-}
-
-.description {
-    color: var(--mantine-color-blue-0);
-    max-width: rem(300px);
-
-    @media (max-width: $mantine-breakpoint-sm) {
-        max-width: 100%;
-    }
+  margin: 100px;
+  display: flex;
+  color: #fff;
+  border-radius: var(--mantine-radius-lg);
+  padding: rem(4px);
+  border: rem(1px) solid
+    light-dark(var(--mantine-color-gray-2), var(--mantine-color-dark-8));
+  padding: calc(var(--mantine-spacing-xl) * 2.5);
+  @media (max-width: $mantine-breakpoint-sm) {
+    flex-direction: column;
+    margin: 20px;
+    padding: calc(var(--mantine-spacing-sm) * 1);
+  }
 }
 
 .form {
-    background-color: #1E1E1E;
-    padding: var(--mantine-spacing-xl);
-    border-radius: var(--mantine-radius-md);
-    box-shadow: var(--mantine-shadow-lg);
+  flex: 1;
+  padding: var(--mantine-spacing-xl);
+  padding-left: calc(var(--mantine-spacing-xl) * 2);
+  border-left: 0;
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    padding: var(--mantine-spacing-md);
+    padding-left: var(--mantine-spacing-md);
+  }
 }
 
-.social {
-    color: var(--mantine-color-white);
+.fields {
+  margin-top: rem(-12px);
+}
 
-    @mixin hover {
-        color: var(--mantine-color-blue-1);
+.fieldInput {
+  flex: 1;
+
+  & + & {
+    margin-left: var(--mantine-spacing-md);
+
+    @media (max-width: $mantine-breakpoint-sm) {
+      margin-left: 0;
+      margin-top: var(--mantine-spacing-md);
     }
+  }
 }
 
-.input {
-    background-color: #0;
-    /* border-color: var(--mantine-color-gray-4); */
-    color: var(--mantine-color-black);
+.fieldsGroup {
+  display: flex;
 
-    &::placeholder {
-        color: var(--mantine-color-gray-5);
-    }
+  @media (max-width: $mantine-breakpoint-sm) {
+    flex-direction: column;
+  }
 }
 
-.inputLabel {
-    color: #fff;
-    /* color: var(--mantine-color-black); */
+.contacts {
+  box-sizing: border-box;
+  position: relative;
+  border-radius: var(--mantine-radius-lg);
+  background-size: cover;
+  background-position: center;
+  border: rem(1px) solid transparent;
+  padding: var(--mantine-spacing-xl);
+  flex: 0 0 rem(280px);
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    margin-bottom: var(--mantine-spacing-sm);
+    padding-left: var(--mantine-spacing-md);
+  }
+}
+
+.title {
+  margin-bottom: calc(var(--mantine-spacing-xl) * 1.5);
+  font-family:
+    Greycliff CF,
+    var(--mantine-font-family);
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    margin-bottom: var(--mantine-spacing-xl);
+  }
 }
 
 .control {
-    background-color: var(--mantine-color-blue-6);
+  @media (max-width: $mantine-breakpoint-sm) {
+    flex: 1;
+  }
 }
