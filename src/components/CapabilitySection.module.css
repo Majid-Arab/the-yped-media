@@ -1,101 +1,98 @@
 .inner {
-
-    @media (max-width: mantine-breakpoint-md) {
-        flex-direction: column;
-    }
+  @media (max-width: $mantine-breakpoint-md) {
+    flex-direction: column;
+  }
 }
 
 .image {
-    @media (max-width: mantine-breakpoint-md) {
-        display: none;
-    }
+  @media (max-width: $mantine-breakpoint-md) {
+    display: none;
+  }
 }
 
 .content {
-    width: 100%;
-    margin-top: 100px;
+  width: 100%;
+  margin-top: 100px;
 
-
-    @media (max-width: mantine-breakpoint-md) {
-        margin-right: 0;
-    }
+  @media (max-width: $mantine-breakpoint-md) {
+    margin-right: 0;
+  }
 }
 
 .title {
-    color: var(--mantine-color-white);
-    font-family:
-        Greycliff CF,
-        var(--mantine-font-family);
-    font-weight: 500;
-    line-height: 1.05;
-    max-width: 100%;
-    font-size: rem(70px);
-    text-align: center;
+  color: var(--mantine-color-white);
+  font-family:
+    Greycliff CF,
+    var(--mantine-font-family);
+  font-weight: 500;
+  line-height: 1.05;
+  max-width: 100%;
+  font-size: rem(70px);
+  text-align: center;
 
-    @media (max-width: mantine-breakpoint-md) {
-        max-width: 100%;
-        font-size: rem(34px);
-        line-height: 1.15;
-    }
+  @media (max-width: $mantine-breakpoint-md) {
+    max-width: 100%;
+    font-size: rem(34px);
+    line-height: 1.15;
+  }
 }
 
 .subContent {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 150px;
 }
 
 .subText {
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 30px;
 }
 
 .subText:nth-child(2) {
-    text-align: end;
-    width: 45%;
+  text-align: end;
+  width: 45%;
 }
 
 .verticalTitle {
-    background-color: #181818;
-    padding: 20pxq;
-    font-size: 30px;
-    color: #fff;
-    writing-mode: vertical-lr;
-    width: 20%;
+  background-color: #181818;
+  padding: 20pxq;
+  font-size: 30px;
+  color: #fff;
+  writing-mode: vertical-lr;
+  width: 20%;
 }
 
 .verticaltext {
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-    color: white;
-    font-size: 16px;
-    text-align: center;
-    margin: 20px 0;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  margin: 20px 0;
 }
 
 .listBox {
-    display: flex;
-    align-items: center;
-    margin: 60px 10px;
-    gap: 300px;
-    color: white;
+  display: flex;
+  align-items: center;
+  margin: 60px 10px;
+  gap: 300px;
+  color: white;
 }
 
 .list {
-    font-size: 80px;
-    text-transform: uppercase;
-    color: #fff;
+  font-size: 80px;
+  text-transform: uppercase;
+  color: #fff;
 }
 
 .item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .item span {
-
-    font-size: 30px;
+  font-size: 30px;
 }

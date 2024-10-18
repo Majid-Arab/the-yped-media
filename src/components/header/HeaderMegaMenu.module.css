@@ -20,7 +20,7 @@
   font-weight: 500;
   font-size: 30px;
 
-  @media (max-width: mantine-breakpoint-sm) {
+  @media (max-width: $mantine-breakpoint-sm) {
     height: rem(42px);
     width: 100%;
   }
@@ -46,5 +46,6 @@
   margin-top: var(--mantine-spacing-sm);
   padding: var(--mantine-spacing-md) calc(var(--mantine-spacing-md) * 2);
   padding-bottom: var(--mantine-spacing-xl);
-  border-top: rem(1px) solid light-dark(var(--mantine-color-gray-1), var(--mantine-color-dark-5));
+  border-top: rem(1px) solid
+    light-dark(var(--mantine-color-gray-1), var(--mantine-color-dark-5));
 }
