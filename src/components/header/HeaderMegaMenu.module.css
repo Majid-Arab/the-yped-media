@@ -13,7 +13,6 @@
 .link {
   display: flex;
   align-items: center;
-  /* height: 100%; */
   padding-left: var(--mantine-spacing-md);
   padding-right: var(--mantine-spacing-md);
   text-decoration: none;
@@ -22,13 +21,9 @@
   font-size: 30px;
 
   @media (max-width: $mantine-breakpoint-sm) {
-    /* height: rem(42px); */
-    /* width: 100%; */
     font-size: 20px;
   }
   @media (max-width: $mantine-breakpoint-xs) {
-    /* height: rem(42px); */
-    /* width: 100%; */
     font-size: 16px;
     font-weight: 900;
   }
@@ -36,9 +31,12 @@
 
 .btn {
   @media (max-width: $mantine-breakpoint-xs) {
-    font-size: 14px;
+    /* font-size: 14px;
     background: none;
     color: #fff;
+    /* border: none; */
+    /* padding: 0; */
+    display: none;
   }
   @mixin hover {
     background-color: light-dark(
