@@ -15,8 +15,6 @@
 }
 
 .inner {
-  /* display: flex;
-  justify-content: space-between; */
   height: 100vh;
 
   @media (max-width: $mantine-breakpoint-md) {
@@ -35,7 +33,6 @@
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: space-between;
   flex-direction: column;
   position: relative;
 
