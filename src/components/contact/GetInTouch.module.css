@@ -51,14 +51,6 @@
   }
 }
 
-.fieldsGroup {
-  display: flex;
-
-  @media (max-width: $mantine-breakpoint-sm) {
-    flex-direction: column;
-  }
-}
-
 .contacts {
   box-sizing: border-box;
   position: relative;
