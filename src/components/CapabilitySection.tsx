@@ -57,7 +57,7 @@ export function CapabilitySection() {
             style={{
               border: "1px solid #fff",
               marginTop: "5px",
-              marginBottom: "20px",
+              marginBottom: "100px",
             }}
           />
         </div>
