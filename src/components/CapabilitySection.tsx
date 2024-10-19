@@ -53,7 +53,13 @@ export function CapabilitySection() {
             </div>
           </div>
 
-          <hr style={{ border: "1px solid #fff", marginTop: "5px" }} />
+          <hr
+            style={{
+              border: "1px solid #fff",
+              marginTop: "5px",
+              marginBottom: "20px",
+            }}
+          />
         </div>
       </Container>
     </div>
