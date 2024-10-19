@@ -38,7 +38,7 @@ export function GetInTouch() {
               <TextInput label="Your name" placeholder="Your name" />
               <TextInput
                 label="Your email"
-                placeholder="hello@mantine.dev"
+                placeholder="hello@gmail.com"
                 required
               />
             </SimpleGrid>
