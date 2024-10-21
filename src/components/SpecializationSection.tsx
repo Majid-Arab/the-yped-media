@@ -15,7 +15,7 @@ export function SpecializationSection() {
                 variant="gradient"
                 gradient={{ from: "pink", to: "yellow" }}
               >
-                SPECIALIZE
+                SPECIALIZED
               </Text>{" "}
               IN CREATING ENGAGING DIGITAL EXPERIENCES THAT WILL{" "}
               <Text
