@@ -6,9 +6,9 @@ import {
   MantineProvider,
   mergeMantineTheme,
 } from "@mantine/core";
+import { Notifications } from "@mantine/notifications";
 import localFont from "next/font/local";
 import "./globals.css";
-import { Notifications } from "@mantine/notifications";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -47,7 +47,8 @@ export default function RootLayout({
       <body className="antialiased">
         <MantineProvider theme={theme}>
           <Notifications />
-          {children}</MantineProvider>
+          {children}
+        </MantineProvider>
       </body>
     </html>
   );
