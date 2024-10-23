@@ -8,7 +8,7 @@ export function HeroSection() {
         <div className={classes.inner}>
           <div className={classes.content}>
             <Title className={classes.title}>
-              WE ARE{" "}
+              WE ARE A{" "}
               <Text
                 component="span"
                 inherit
@@ -22,8 +22,7 @@ export function HeroSection() {
 
             <Box className={classes.descriptionBox}>
               <Text className={classes.description} mt={30}>
-                We’re focused on bringing unseen digital ideas to life for our
-                clients. With our loads of skill sets to solve your needs.
+                We’re focused on bringing unseen digital ideas to life for our clients. With our loads of skill sets to solve your needs.
               </Text>
             </Box>
 

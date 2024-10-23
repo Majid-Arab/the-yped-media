@@ -31,9 +31,7 @@ export function SpecializationSection() {
 
             <Box className={classes.descriptionBox}>
               <Text className={classes.description} mt={30}>
-                With a focus on user-centered design and intuitive interactions,
-                we aim to create unforgettable experiences that setting your
-                brand part.
+                With a focus on user-centered design and intuitive interactions, we aim to create unforgettable experiences that set your brand apart.
               </Text>
             </Box>
           </div>

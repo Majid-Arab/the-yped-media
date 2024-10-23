@@ -9,15 +9,13 @@ export function CapabilitySection() {
         <div className={classes.inner}>
           <div className={classes.content}>
             <Title className={classes.title}>
-              AT OUR STUDIO CREATIVITY TAKES CENTER STAGE DELIVERING SOLUTIONS
-              THAT EXCEEDS EXPECTATION
+              AT OUR STUDIO CREATIVITY TAKES CENTER STAGE DELIVERING SOLUTIONS THAT EXCEED EXPECTATION
             </Title>
           </div>
           <div className={classes.subContent}>
             <Text className={classes.subText}>Our Capabilities</Text>
             <Text className={classes.subText}>
-              you have the option to order a full website creation or individual
-              service as needed
+              You have the option to order a full website creation or individual service as needed
             </Text>
           </div>
 
