@@ -12,21 +12,25 @@ import {
 } from "@mantine/core";
 import { ContactIconsList } from "./ContactIcons";
 import { hasLength, isEmail, useForm } from "@mantine/form";
-import { IconX, IconCheck } from '@tabler/icons-react';
-import classes from "./GetInTouch.module.css";
-import { useState } from "react";
+import { IconX, IconCheck } from "@tabler/icons-react";
 import { notifications } from "@mantine/notifications";
+import classes from "./GetInTouch.module.css";
+import "@mantine/notifications/styles.css";
 
 export function GetInTouch() {
-
-  const [status, setStatus] = useState<string | null>(null);
   const form = useForm({
     initialValues: { name: "", email: "", subject: "", message: "" },
     validate: {
-      name: hasLength({ min: 2, max: 10 }, 'Name must be 2-10 characters long'),
-      email: isEmail('Invalid email'),
-      subject: hasLength({ min: 2, max: 10 }, 'Subject must be 2-10 characters long'),
-      message: hasLength({ min: 2, max: 10 }, 'Message must be 2-10 characters long'),
+      name: hasLength({ min: 2, max: 10 }, "Name must be 2-10 characters long"),
+      email: isEmail("Invalid email"),
+      subject: hasLength(
+        { min: 2, max: 10 },
+        "Subject must be 2-10 characters long",
+      ),
+      message: hasLength(
+        { min: 2, max: 10 },
+        "Message must be 2-10 characters long",
+      ),
     },
   });
 
@@ -36,8 +40,10 @@ export function GetInTouch() {
     const formElement = e.target as HTMLFormElement;
     const formData = new FormData(formElement);
 
-    // formData.append("access_key", `${process.env.WEB3_FROM_ACCESS_KEY}`);
-    formData.append("access_key", "d91c724f-d075-4c3c-a6a9-8ff947815279");
+    formData.append(
+      "access_key",
+      `${process.env.NEXT_PUBLIC_WEB3_FROM_ACCESS_KEY}`,
+    );
 
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
@@ -64,19 +70,17 @@ export function GetInTouch() {
         form.reset();
       } else {
         console.error("Error: ", result);
-        notifications.show({
-          title: "Error",
-          message: "There was an error sending your message.",
-          color: "red",
-          icon: <IconX style={{ width: rem(20), height: rem(20) }} />,
-        });
       }
     } catch (error) {
       console.error("Fetch error: ", error);
+      notifications.show({
+        title: "Error",
+        message: "There was an error sending your message.",
+        color: "red",
+        icon: <IconX style={{ width: rem(20), height: rem(20) }} />,
+      });
     }
   };
-
-
 
   return (
     <Paper shadow="md" radius="lg" className={classes.contactBox} id="contact">
@@ -89,10 +93,7 @@ export function GetInTouch() {
           <ContactIconsList />
         </div>
 
-        <form
-          className={classes.form}
-          onSubmit={handleSubmit}
-        >
+        <form className={classes.form} onSubmit={handleSubmit}>
           <Text fz={22} fw={700} className={classes.title}>
             Get in touch
           </Text>
@@ -110,8 +111,8 @@ export function GetInTouch() {
                 label="Your email"
                 placeholder="hello@gmail.com"
                 name="email"
-                key={form.key('email')}
-                {...form.getInputProps('email')}
+                key={form.key("email")}
+                {...form.getInputProps("email")}
                 required
               />
             </SimpleGrid>
@@ -121,8 +122,8 @@ export function GetInTouch() {
               label="Subject"
               placeholder="Subject"
               name="subject"
-              key={form.key('subject')}
-              {...form.getInputProps('subject')}
+              key={form.key("subject")}
+              {...form.getInputProps("subject")}
               required
             />
 
@@ -131,8 +132,8 @@ export function GetInTouch() {
               label="Your message"
               placeholder="Please include all relevant information"
               name="message"
-              key={form.key('message')}
-              {...form.getInputProps('message')}
+              key={form.key("message")}
+              {...form.getInputProps("message")}
               minRows={3}
             />
 

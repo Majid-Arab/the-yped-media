@@ -6,9 +6,9 @@ import {
   MantineProvider,
   mergeMantineTheme,
 } from "@mantine/core";
+import { Notifications } from "@mantine/notifications";
 import localFont from "next/font/local";
 import "./globals.css";
-import { Notifications } from "@mantine/notifications";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -22,8 +22,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Next App Mantine Tailwind Template",
-  description: "Next App Mantine Tailwind Template",
+  title: "The Typed Media",
+  description: "We Are Brand Of Creativity That Creates The Unexpected",
 };
 
 const theme = mergeMantineTheme(
@@ -47,7 +47,8 @@ export default function RootLayout({
       <body className="antialiased">
         <MantineProvider theme={theme}>
           <Notifications />
-          {children}</MantineProvider>
+          {children}
+        </MantineProvider>
       </body>
     </html>
   );
