@@ -22,8 +22,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Next App Mantine Tailwind Template",
-  description: "Next App Mantine Tailwind Template",
+  title: "The Typed Media",
+  description: "We Are Brand Of Creativity That Creates The Unexpected",
 };
 
 const theme = mergeMantineTheme(
